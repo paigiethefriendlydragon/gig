@@ -1,6 +1,6 @@
-class CreateEmployersTable < ActiveRecord::Migration[5.2]
+class CreateMusicians < ActiveRecord::Migration[5.2]
   def change
-    create_table :employers_tables do |t|
+    create_table :musicians do |t|
       t.string :first_name, null: false
       t.string :last_name, null: false
       t.string :address, null: false
@@ -9,7 +9,7 @@ class CreateEmployersTable < ActiveRecord::Migration[5.2]
       t.string :zip, null: false
       t.string :description, null: false
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
